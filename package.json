@@ -6,7 +6,6 @@
     "scripts": {
         "test": "jest",
         "start": "node server.js"
-
     },
     "repository": {
         "type": "git",
@@ -21,6 +20,7 @@
     "homepage": "https://github.com/Fens05/12-cityhorse-dresden#readme",
     "dependencies": {
         "express": "^4.17.2",
+        "inquirer": "^8.2.0",
         "mysql2": "^2.3.3"
     },
     "devDependencies": {

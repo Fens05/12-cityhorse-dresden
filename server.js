@@ -1,12 +1,12 @@
-// const express = require('express');
+const express = require('express');
 const db = require('./db/routes/connection');
 const inquirer = require('inquirer');
 
 // const apis 
-const { getAll } = require('./lib/query');
-const { addDepartment } = require('./lib/departments');
-const { addRole } = require('./lib/roles');
-const { addEmployee } = require('./lib/employees');
+const { getAll } = require('./lib/query.js');
+const { addDepartment } = require('./lib/departments.js');
+const { addRole } = require('./lib/roles.js');
+const { addEmployee } = require('./lib/employees.js');
 
 // Start server after DB connection
 db.connect(err => {
@@ -105,7 +105,7 @@ userInput()
             getAll(table);
         } else if (data.action === 'View all Roles') {
             // return all Roles
-            const table = 'role';
+            const table = 'roles';
             getAll(table);
         } else if (data.action === 'View all Employees') {
             // return all Employees
