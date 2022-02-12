@@ -1,4 +1,3 @@
-CREATE database employees;
-USE employeest
-;
-
+DROP DATABASE IF EXISTS employee_tracker;
+CREATE database employee_tracker;
+USE employee_tracker;
